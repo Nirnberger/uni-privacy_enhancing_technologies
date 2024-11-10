@@ -28,9 +28,10 @@ pub fn sum_even_numbers() -> i32 {
 pub fn countdown() {
     let mut counter = 10;
     while counter > 0 {
-        counter -=1;
         println!("{}",counter);
+        counter -=1;
     }
+    println!("Liftoff");
 }
 
 // Match Statement: day_of_week function
