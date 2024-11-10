@@ -18,7 +18,10 @@ pub fn print_population(city_population: &HashMap<String, i32>, city: &str) {
 
 // Function to filter even numbers from a vector using an iterator
 pub fn filter_even_numbers(v: &Vec<i32>) -> Vec<i32> {
-    v.iter().filter(|&x| x % 2 == 0).collect()
+    v.iter()
+        .filter(|&x| x % 2 == 0)
+        .cloned()
+        .collect()
 }
 
 // Function to sum odd numbers in a vector using an iterator
